@@ -209,18 +209,23 @@ body {
   background: transparent;
 }
 
-.title-gradient {
+.title-gradient__wrap {
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.title-gradient h1 {
+.title-gradient__wrap .title-gradient {
   display: inline;
   background-repeat: no-repeat;
   background-position: center bottom 15px;
   background-size: 100% 12px;
   background-image: -webkit-gradient(linear, left top, right top, from(#FBDC4D), to(#FBDC4D));
   background-image: linear-gradient(to right, #FBDC4D, #FBDC4D);
+}
+
+.title-gradient__wrap .title-gradient.title-2 {
+  background-size: 100% 8px;
+  background-position: center bottom 10px;
 }
 
 .title-1 {
@@ -230,20 +235,20 @@ body {
   line-height: 1;
 }
 
-.title-3 {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.3;
-}
-
 .title-2 {
   font-weight: 700;
   font-size: 54px;
   line-height: 1.3;
 }
 
+.title-3 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3;
+}
+
 .header {
-  padding: 60px 0 50px;
+  padding: 60px 0 90px;
 }
 .header__nav {
   margin-bottom: 82px;
@@ -419,6 +424,61 @@ body {
 
 .link + .link {
   margin-left: 15px;
+}
+
+.portfolio {
+  padding: 71px 0 90px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F5FBFF), to(#F5FBFF)), #F4F8F9;
+  background: linear-gradient(0deg, #F5FBFF, #F5FBFF), #F4F8F9;
+}
+.portfolio__inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 50px 30px;
+}
+.portfolio .title-gradient__wrap {
+  margin-bottom: 65px;
+}
+.portfolio__item {
+  grid-column: 2 span;
+}
+.portfolio__item--large {
+  grid-column: 3 span;
+}
+.portfolio__item--large .portfolio__link {
+  max-width: 540px;
+  width: 100%;
+  min-height: 463px;
+}
+.portfolio__item--large .portfolio__img {
+  margin-bottom: 20px;
+  height: 370px;
+}
+.portfolio__item--large .portfolio__name {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+.portfolio__item--large .portfolio__descr {
+  font-size: 20px;
+}
+.portfolio__link {
+  max-width: 350px;
+  width: 100%;
+  min-height: 296px;
+}
+.portfolio__img {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 220px;
+}
+.portfolio__name {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+}
+.portfolio__descr {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
