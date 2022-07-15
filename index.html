@@ -41,22 +41,22 @@
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#" aria-label="ссылка на секцию с навыками">
+                            <a class="nav__link" href="#about" aria-label="ссылка на секцию с навыками">
                                 Навыки
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#" aria-label="ссылка на секцию с работами">
+                            <a class="nav__link" href="#portfolio" aria-label="ссылка на секцию с работами">
                                 Портфолио
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#" aria-label="ссылка на секцию с моим планом работ">
+                            <a class="nav__link" href="#timeline" aria-label="ссылка на секцию с моим планом работ">
                                 Как я работаю
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#" aria-label="ссылка на мои контакты">
+                            <a class="nav__link" href="#contacts" aria-label="ссылка на мои контакты">
                                 Контакты
                             </a>
                         </li>
@@ -98,7 +98,7 @@
                         <div class="header__content">
                             <div class="title-gradient__wrap">
                                 <h1 class="title-1 title-gradient">
-                                    Юрий Ключевский
+                                    Кирилл Лавров
                                 </h1>
                             </div>
                             <div class="header__descr">
@@ -108,8 +108,9 @@
                                 </p>
                             </div>
                             <div class="header__links">
-                                <a class="header__link link link--accent " href="#">Познакомиться</a>
-                                <a class="header__link link" href="#">
+                                <a class="link link--accent" href="#about"
+                                    aria-label="ссылка прокрутки к блоку обо мне">Познакомиться</a>
+                                <a class="link" href="#contacts" aria-label="ссылка к секции контактов">
                                     Контакты
                                 </a>
                             </div>
@@ -122,9 +123,12 @@
                 </div>
             </div>
 
-            <img class="header__bg" src="./images/header/header-bg.png" alt="Картинка рабочего стола с компьютером">
+            <div class="header__bg">
+                <img class="header__bg-image" src="./images/header/header-bg.png"
+                    alt="Картинка рабочего стола с компьютером">
+            </div>
 
-            <div class="about">
+            <div class="about" id="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__skills">
@@ -185,8 +189,8 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a class="about__social-link" href="mailto:yurij.kluchevsky@gmail.com"
-                                aria-label="имейл адрес">yurij.kluchevsky@gmail.com</a>
+                            <a class="social-link" href="mailto:yurij.kluchevsky@gmail.com"
+                                aria-label="имейл адрес">kirill.lavrov92@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +200,7 @@
 
         <main class="main">
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="container">
                     <div class="title-gradient__wrap">
                         <h2 class="title-2 title-gradient">
@@ -205,8 +209,11 @@
                     </div>
                     <div class="portfolio__inner">
                         <div class="portfolio__item portfolio__item--large">
-                            <a class="portfolio__link" href="#">
-                                <img class="portfolio__img" src="./images/portfolio/1.jpg" alt="">
+                            <a class="portfolio__link" href="#"
+                                aria-label="ссылка на работу верстки многостраничного сайта 'Форест травел'">
+                                <div class="portfolio__image">
+                                    <img class="portfolio__img" src="./images/portfolio/1.jpg" alt="сайт Форест тревел">
+                                </div>
                                 <h4 class="portfolio__name">
                                     Верстка “Форест тревел”
                                 </h4>
@@ -216,8 +223,10 @@
                             </a>
                         </div>
                         <div class="portfolio__item portfolio__item--large">
-                            <a class="portfolio__link" href="#">
-                                <img class="portfolio__img" src="./images/portfolio/2.jpg" alt="">
+                            <a class="portfolio__link" href="#" aria-label="ссылка на работу верстки лендинга 'Юнит'">
+                                <div class="portfolio__image">
+                                    <img class="portfolio__img" src="./images/portfolio/2.jpg" alt="сайт Юнит">
+                                </div>
                                 <h4 class="portfolio__name">
                                     Сайт приложения “Юнит”
                                 </h4>
@@ -227,8 +236,11 @@
                             </a>
                         </div>
                         <div class="portfolio__item">
-                            <a class="portfolio__link" href="#">
-                                <img class="portfolio__img" src="./images/portfolio/3.jpg" alt="">
+                            <a class="portfolio__link" href="#"
+                                aria-label="ссылка на работу верстки 'Многостраничного сайта о знаменитости'">
+                                <div class="portfolio__image">
+                                    <img class="portfolio__img" src="./images/portfolio/3.jpg" alt="">
+                                </div>
                                 <h4 class="portfolio__name">
                                     Верстка “Мир Авто”
                                 </h4>
@@ -238,8 +250,11 @@
                             </a>
                         </div>
                         <div class="portfolio__item">
-                            <a class="portfolio__link" href="#">
-                                <img class="portfolio__img" src="./images/portfolio/4.jpg" alt="">
+                            <a class="portfolio__link" href="#"
+                                aria-label="ссылка на работу верстки лендинга транспортной компании'TransFlash'">
+                                <div class="portfolio__image">
+                                    <img class="portfolio__img" src="./images/portfolio/4.jpg" alt="">
+                                </div>
                                 <h4 class="portfolio__name">
                                     Верстка “Мир Авто”
                                 </h4>
@@ -249,8 +264,11 @@
                             </a>
                         </div>
                         <div class="portfolio__item">
-                            <a class="portfolio__link" href="#">
-                                <img class="portfolio__img" src="./images/portfolio/5.jpg" alt="">
+                            <a class="portfolio__link" href="#"
+                                aria-label="ссылка на работу верстки лендинга сайта криптовалы 'Bixcoin'">
+                                <div class="portfolio__image">
+                                    <img class="portfolio__img" src="./images/portfolio/5.jpg" alt="">
+                                </div>
                                 <h4 class="portfolio__name">
                                     Верстка “Мир Авто”
                                 </h4>
@@ -263,9 +281,165 @@
                 </div>
             </section>
 
-        </main>
-        <footer class="footer">
+            <section class="timeline" id="timeline">
+                <div class="container-small">
+                    <div class="title-gradient__wrap timeline__title">
+                        <h2 class="title-2 title-gradient">
+                            Как я работаю
+                        </h2>
+                    </div>
+                    <ul class="timeline__items">
+                        <li class="timeline__item">
+                            <div class="title-gradient__wrap timeline__subtitle">
+                                <h2 class="title-4 title-gradient">
+                                    Оцениваю макет
+                                </h2>
+                            </div>
+                            <p class="timeline__text">
+                                Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+                            </p>
+                            <span class="timeline__time">Время: 2 часа</span>
+                        </li>
+                        <li class="timeline__item">
+                            <div class="title-gradient__wrap timeline__subtitle">
+                                <h2 class="title-4 title-gradient">
+                                    ТЗ, смета и график работ
+                                </h2>
+                            </div>
+                            <p class="timeline__text">
+                                Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по
+                                этапам работы.
+                            </p>
+                            <span class="timeline__time">Время: 2 - 4 часа</span>
+                        </li>
+                        <li class="timeline__item">
+                            <div class="title-gradient__wrap timeline__subtitle">
+                                <h2 class="title-4 title-gradient">
+                                    Вы держите руку на пульсе
+                                </h2>
+                            </div>
+                            <p class="timeline__text">
+                                Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть
+                                актуальное состояние проекта и задач.
+                            </p>
+                        </li>
+                        <li class="timeline__item">
+                            <div class="title-gradient__wrap timeline__subtitle">
+                                <h2 class="title-4 title-gradient">
+                                    Выполняю каждый этап
+                                </h2>
+                            </div>
+                            <p class="timeline__text">
+                                Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит
+                                поэтапную оплату.
+                            </p>
+                        </li>
+                        <li class="timeline__item">
+                            <div class="title-gradient__wrap timeline__subtitle">
+                                <h2 class="title-4 title-gradient">
+                                    Финальное ревью проекта
+                                </h2>
+                            </div>
+                            <p class="timeline__text">
+                                Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы
+                                проекта, заливаю сайт на хостинг заказчика.
+                            </p>
+                            <span class="timeline__time">Время: 2 - 4 часа</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <div class="title-gradient__wrap contacts__title">
+                        <h2 class="title-2 title-gradient">
+                            Контакты
+                        </h2>
+                    </div>
+                    <div class="contacts__inner">
+                        <div class="contacts__col">
+                            <ul class="contacts__links">
+                                <li class="contacts__item">
+                                    <span>Email</span>
+                                    <a class="social-link" href="mailto:Kirill.lavrov92@gmail.com"
+                                        aria-label="мой имейл адрес">Kirill.lavrov92@gmail.com
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <span>Телефон</span>
+                                    <a class="social-link" href="tel:+79254821801" aria-label="мой мобильный телефон">+7
+                                        (925) 482 18 01
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="contacts__social-links social-links">
+                                <li class="social-links__item">
+                                    <a class="social-links__link" href="#">
+                                        <img class="social-links__img" src="./images/icons/telegram.svg"
+                                            alt="иконка соц-сети телеграм" aria-label="ссылка на мой телеграм">
+                                    </a>
+                                </li>
+                                <li class="social-links__item">
+                                    <a class="social-links__link" href="#">
+                                        <img class="social-links__img" src="./images/icons/vk.svg"
+                                            alt="иконка соц-сети ВКонтакте" aria-label="ссылка на ВК">
+                                    </a>
+                                </li>
+                                <li class="social-links__item">
+                                    <a class="social-links__link" href="#">
+                                        <img class="social-links__img" src="./images/icons/facebook.svg"
+                                            alt="иконка соц-сети фейсбук" aria-label="ссылка на мой фейсбук">
+                                    </a>
+                                </li>
+                                <li class="social-links__item">
+                                    <a class="social-links__link" href="#">
+                                        <img class="social-links__img" src="./images/icons/instagram.svg"
+                                            alt="иконка соц-сети инстаграм" aria-label="ссылка на мой инстаграм">
+                                    </a>
+                                </li>
+                                <li class="social-links__item">
+                                    <a class="social-links__link" href="#">
+                                        <img class="social-links__img" src="./images/icons/whatsupp.svg"
+                                            alt="иконка мессенжера вотсап" aria-label="ссылка на мой вотсап">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contacts__col">
+                            <div class="contacts__text">
+                                <p>
+                                    Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для
+                                    работы над проектом — напишите мне.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="foter__inner">
+                    <p class="footer__copyright">
+                        © 2021 — Кирилл Лавров
+                    </p>
+
+                    <div class="footer__text">
+                        <p>
+                            Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.
+                        </p>
+                        <p>Этот сайт сделал в рамках
+                            прохождения обучения по верстке на курсах от <a class="footer__link" href="#">
+                                WebCademy.ru</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 

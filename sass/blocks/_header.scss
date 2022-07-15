@@ -16,6 +16,7 @@
         flex-direction: column;
         flex-basis: 542px;
         margin-right: 95px;
+        padding-top: 10px;
     }
 
     &__descr {
@@ -53,9 +54,12 @@
     }
 
     &__bg {
-        height: 759px;
-        margin-top: -155px;
-        width: 100%;
+        max-width: 1440px;
+        margin: -155px auto 0 auto;
+    }
+
+    &__bg-image {
+        // height: 759px;
         object-fit: cover;
         pointer-events: none;
     }

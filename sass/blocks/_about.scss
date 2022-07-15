@@ -1,5 +1,5 @@
 .about {
-    margin-top: -35px;
+    margin-top: 10px;
 
     &__inner {
         display: flex;
@@ -34,8 +34,7 @@
         color: var(--main-color);
     }
 
-    &__social-link {
-        margin-top: 12px;
-        color: var(--link-color);
+    &__social-links {
+        margin-bottom: 12px;
     }
 }
