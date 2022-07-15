@@ -1,0 +1,41 @@
+.about {
+    margin-top: -35px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__skills {
+        margin-right: 30px;
+        max-width: 635px;
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__skills-item {
+        padding-left: 30px;
+        position: relative;
+    }
+
+    &__skills-item+&__skills-item {
+        margin-top: 10px;
+    }
+
+    &__skills-item::before {
+        content: '\2014';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 220px;
+        height: 1px;
+        color: var(--main-color);
+    }
+
+    &__social-link {
+        margin-top: 12px;
+        color: var(--link-color);
+    }
+}

@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.3;
+    color: var(--main-color);
+
+    text-rendering: optimizeSpeed;
+    //text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.wrapper {
+    /* sticky footer */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.wrapper>* {
+    /* sticky footer */
+    flex-shrink: 0;
+}
+
+.footer {
+    /* sticky footer */
+    margin-top: auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &--fluid {
+        max-width: unset;
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        .container {
+            width: 900px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        .container {
+            width: 600px;
+        }
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        .container {
+            width: 320px;
+        }
+    }
+}
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin-left: -10000px;
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+    background: transparent;
+}
+
+.title-gradient {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.title-gradient h1 {
+    // margin: 0 0 20px 0;
+
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 15px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to right, #FBDC4D, #FBDC4D);
+}
+
+
+.title-1 {
+    max-width: 535px;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 1;
+}
+
+.title-3 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.3;
+}
+
+.title-2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.3;
+}

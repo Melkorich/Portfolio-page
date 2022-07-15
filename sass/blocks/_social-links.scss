@@ -1,0 +1,14 @@
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__img {
+        width: 48px;
+        height: 48px;
+    }
+}

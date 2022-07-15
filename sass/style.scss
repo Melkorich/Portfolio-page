@@ -1,0 +1,19 @@
+//base
+@import './base/reset';
+@import './base/fonts';
+@import './base/mixins';
+@import './base/vars';
+@import './base/base';
+
+//blocks
+@import './blocks/header';
+@import './blocks/footer';
+@import './blocks/navigation';
+@import './blocks/about';
+@import './blocks/social-links';
+// @import './blocks/logo';
+
+@import './blocks/link';
+
+
+//sections
