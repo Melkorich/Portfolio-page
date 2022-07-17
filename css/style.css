@@ -1159,7 +1159,7 @@ body.no-scroll {
 }
 
 .timeline {
-  padding: 70px 0 38px;
+  padding: 70px 0 80px;
 }
 @media (max-width: 1139px) {
   .timeline {
@@ -1310,11 +1310,15 @@ body.no-scroll {
 @media (max-width: 1139px) {
   .timeline__item:nth-child(odd)::before {
     right: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 @media (max-width: 899px) {
   .timeline__item:nth-child(odd)::before {
     left: 0;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 @media (max-width: 767px) {
@@ -1328,6 +1332,15 @@ body.no-scroll {
 @media (max-width: 1139px) {
   .timeline__item:nth-child(even)::before {
     left: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 899px) {
+  .timeline__item:nth-child(even)::before {
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 @media (max-width: 767px) {
@@ -1352,14 +1365,14 @@ body.no-scroll {
 }
 @media (max-width: 899px) {
   .timeline__item:nth-child(odd)::after {
-    left: 0;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: -15px;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 @media (max-width: 767px) {
   .timeline__item:nth-child(odd)::after {
-    left: 15px;
+    left: 0px;
   }
 }
 .timeline__item:nth-child(even)::after {
@@ -1367,9 +1380,16 @@ body.no-scroll {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media (max-width: 899px) {
+  .timeline__item:nth-child(even)::after {
+    left: -15px;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 @media (max-width: 767px) {
   .timeline__item:nth-child(even)::after {
-    left: 15px;
+    left: 0px;
   }
 }
 .timeline__item:last-child::before {
@@ -1423,12 +1443,12 @@ body.no-scroll {
 }
 @media (max-width: 1139px) {
   .contacts {
-    padding: 40px 0 60px;
+    padding: 40px 0 65px;
   }
 }
 @media (max-width: 899px) {
   .contacts {
-    padding: 52px 0 30px;
+    padding: 45px 0 30px;
   }
 }
 .contacts__title {

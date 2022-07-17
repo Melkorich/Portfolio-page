@@ -1,5 +1,5 @@
 .timeline {
-    padding: 70px 0 38px;
+    padding: 70px 0 80px;
 
     @media (max-width: 1139px) {
         padding: 60px 0 38px;
@@ -128,10 +128,12 @@
 
         @media (max-width: 1139px) {
             right: 0;
+            transform: translateX(50%);
         }
 
         @media (max-width: 899px) {
             left: 0;
+            transform: none;
         }
 
         @media (max-width: 767px) {
@@ -144,6 +146,12 @@
 
         @media (max-width: 1139px) {
             left: 0;
+            transform: translateX(-50%);
+        }
+
+        @media (max-width: 899px) {
+            left: 0;
+            transform: none;
         }
 
         @media (max-width: 767px) {
@@ -168,12 +176,12 @@
         transform: translateX(50%);
 
         @media (max-width: 899px) {
-            left: 0;
-            transform: translateX(-50%);
+            left: -15px;
+            transform: none;
         }
 
         @media (max-width: 767px) {
-            left: 15px;
+            left: 0px;
         }
     }
 
@@ -181,8 +189,13 @@
         left: 0;
         transform: translateX(-50%);
 
+        @media (max-width: 899px) {
+            left: -15px;
+            transform: none;
+        }
+
         @media (max-width: 767px) {
-            left: 15px;
+            left: 0px;
         }
     }
 
