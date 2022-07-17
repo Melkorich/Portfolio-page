@@ -1,6 +1,10 @@
 .footer {
-    padding: 40px 50px;
+    padding: 40px 0 50px;
     background-color: #333333;
+
+    @media (max-width: 1139px) {
+        padding: 30px 0;
+    }
 
     &__copyright {
         margin-bottom: 10px;
@@ -14,6 +18,17 @@
         font-size: 16px;
         line-height: 1.5;
         color: #B0B0B0;
+
+        @media (max-width: 1139px) {
+            max-width: 100%;
+            font-size: 14px;
+        }
+    }
+
+    &__text p+p {
+        @media (max-width: 899px) {
+            padding-top: 16px;
+        }
     }
 
     &__link {

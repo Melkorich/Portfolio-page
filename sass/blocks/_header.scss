@@ -1,67 +1,191 @@
 .header {
     padding: 60px 0 90px;
 
-    &__nav {
+    @media (max-width: 1139px) {
+        padding: 60px 0 60px;
+    }
+
+    @media (max-width: 899px) {
+        padding: 30px 0 40px;
+    }
+
+    &__top {
         margin-bottom: 82px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 1139px) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 899px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 899px) {
+            display: none;
+        }
+    }
+
+    &__social-link:not(:last-child) {
+        margin-right: 26px;
     }
 
     &__inner {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: flex-end;
+
+        @media (max-width: 899px) {
+            align-items: center;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            position: relative;
+        }
     }
 
     &__content {
+        position: relative;
         display: flex;
         flex-direction: column;
         flex-basis: 542px;
         margin-right: 95px;
-        padding-top: 10px;
+        padding-top: 19px;
+
+        @media (max-width: 1139px) {
+            flex-basis: 418px;
+            margin-right: 80px;
+            padding-top: 10px;
+        }
+
+        @media (max-width: 899px) {
+            padding-top: 26px;
+            flex-basis: 354px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 0;
+            margin-right: 0;
+            flex-basis: auto;
+        }
     }
 
     &__descr {
         margin-bottom: 30px;
         line-height: 1.59;
         max-width: 540px;
+
+        @media (max-width: 1139px) {
+            margin-bottom: 25px;
+            font-size: 18px;
+            max-width: 418px;
+        }
+
+        @media (max-width: 899px) {
+            font-size: 16px;
+            max-width: 100%;
+        }
     }
 
     &__links {
-        margin-top: auto;
+        @media (max-width: 899px) {
+            display: none;
+        }
     }
 
     &__image {
         position: relative;
         flex-basis: 475px;
         flex-shrink: 0;
+        min-height: 100%;
+        box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
 
-        &::before {
-            content: '';
-            position: absolute;
-            width: 475px;
-            height: 410px;
-            left: 40px;
-            top: 40px;
-            background: rgba(255, 255, 255, 0.5);
-            z-index: 0;
+        @media (max-width: 1139px) {
+            flex-basis: 376px;
+            box-shadow: none;
         }
+
+        @media (max-width: 899px) {
+            flex-basis: 290px;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
     }
 
     &__img {
-        position: relative;
-        z-index: 2;
-        width: 100%;
+        width: 475px;
+        height: 410px;
         object-fit: cover;
+
+        @media (max-width: 1139px) {
+            width: 376px;
+            height: 325px;
+        }
+
+        @media (max-width: 899px) {
+            width: 290px;
+            height: 250px;
+        }
+    }
+
+    .header__image--mobile {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: block;
+            margin-bottom: 10px;
+            flex-basis: auto;
+            flex-shrink: 1;
+        }
     }
 
     &__bg {
         max-width: 1440px;
         margin: -155px auto 0 auto;
+
+        @media (max-width: 1139px) {
+            max-width: 100%;
+            margin: -80px auto 0 auto;
+        }
+
+        @media (max-width: 899px) {
+            margin: -90px auto 0 auto;
+        }
+
+        @media (max-width: 767px) {
+            margin: -25px auto 0 auto;
+        }
     }
 
     &__bg-image {
-        // height: 759px;
         object-fit: cover;
         pointer-events: none;
     }
 
+}
+
+.linkedin-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.github-icon {
+    width: 42px;
+    height: 42px;
+
+    @media (max-width: 1139px) {
+        width: 36px;
+        height: 36px;
+    }
 }

@@ -5,10 +5,37 @@
 
     &__item:not(:last-child) {
         margin-right: 30px;
+
+        @media (max-width: 899px) {
+            margin-right: 20px;
+        }
+    }
+
+    &--mobile {
+        .social-links__item:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__link {
+        width: 48px;
+        height: 48px;
+
+        @media (max-width: 899px) {
+            width: 38px;
+            height: 38px;
+        }
     }
 
     &__img {
         width: 48px;
         height: 48px;
+        object-fit: contain;
+
+        @media (max-width: 899px) {
+            width: 38px;
+            height: 38px;
+        }
     }
+
 }

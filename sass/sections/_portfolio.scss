@@ -2,54 +2,91 @@
     padding: 80px 0 90px;
     background: linear-gradient(0deg, #F5FBFF, #F5FBFF), #F4F8F9;
 
+    @media (max-width: 1139px) {
+        padding: 40px 0 60px;
+    }
+
+    @media (max-width: 899px) {
+        padding: 30px 0 40px;
+    }
+
     &__inner {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 50px 30px;
+
+        @media (max-width: 1139px) {
+            grid-gap: 40px 30px;
+        }
+
+        @media (max-width: 899px) {
+            grid-gap: 20px 30px;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 25px;
+        }
     }
 
     .title-gradient__wrap {
         margin-bottom: 65px;
+
+        @media (max-width: 1139px) {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width: 899px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__item {
         grid-column: 2 span;
-    }
 
-    &__item--large {
-        grid-column: 3 span;
-
-        .portfolio__link {
-            max-width: 540px;
-            width: 100%;
-            min-height: 463px;
-        }
-
-        .portfolio__img {
-            margin-bottom: 20px;
-            height: 370px;
-        }
-
-        .portfolio__name {
-            margin-bottom: 8px;
-            font-size: 30px;
-        }
-
-        .portfolio__descr {
-            font-size: 20px;
+        @media (max-width: 767px) {
+            grid-column: 1;
         }
     }
 
     &__link {
         max-width: 350px;
         width: 100%;
-        min-height: 296px;
+
+        @media (max-width: 1139px) {
+            max-width: 270px;
+        }
+
+        @media (max-width: 899px) {
+            max-width: 226px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
+
+    .portfolio__image {
+        margin-bottom: 16px;
+        height: 220px;
+
+        @media (max-width: 1139px) {
+            margin-bottom: 10px;
+            height: 169px;
+        }
+
+        @media (max-width: 899px) {
+            height: 140px;
+        }
+
+        @media (max-width: 767px) {
+            height: 180px;
+        }
     }
 
     &__img {
-        margin-bottom: 16px;
+        height: 100%;
         width: 100%;
-        height: 220px;
         object-fit: cover;
     }
 
@@ -58,11 +95,94 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 1.3;
+
+        @media (max-width: 1139px) {
+            margin-bottom: 4px;
+            font-size: 18px;
+        }
     }
 
     &__descr {
         font-size: 18px;
+
+        @media (max-width: 1139px) {
+            font-size: 14px;
+        }
     }
+
+    &__item--large {
+        grid-column: 3 span;
+
+        @media (max-width: 767px) {
+            grid-column: 1;
+        }
+
+        .portfolio__link {
+            max-width: 540px;
+            width: 100%;
+
+            @media (max-width: 1139px) {
+                max-width: 420px;
+            }
+
+            @media (max-width: 899px) {
+                max-width: 354px;
+            }
+
+            @media (max-width: 767px) {
+                max-width: 100%;
+            }
+        }
+
+        .portfolio__image {
+            margin-bottom: 20px;
+            height: 370px;
+
+            @media (max-width: 1139px) {
+                height: 288px;
+            }
+
+            @media (max-width: 899px) {
+                margin-bottom: 10px;
+                height: 180px;
+            }
+        }
+
+        .portfolio__img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .portfolio__name {
+            margin-bottom: 8px;
+            font-size: 30px;
+
+            @media (max-width: 1139px) {
+                margin-bottom: 6px;
+                font-size: 24px;
+            }
+
+            @media (max-width: 899px) {
+                margin-bottom: 4px;
+                font-size: 18px;
+            }
+        }
+
+        .portfolio__descr {
+            font-size: 20px;
+
+            @media (max-width: 1139px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 899px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+
 
 
 }

@@ -1,23 +1,64 @@
 .about {
-    margin-top: 10px;
+    margin-top: -35px;
+
+    @media (max-width: 1139px) {
+        margin-top: -14px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 0;
+        padding-top: 11px;
+    }
 
     &__inner {
         display: flex;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__skills {
         margin-right: 30px;
         max-width: 635px;
         width: 100%;
+
+        @media (max-width: 1139px) {
+            max-width: 493px;
+        }
+
+        @media (max-width: 899px) {
+            max-width: 354px;
+        }
+
+        @media (max-width: 767px) {
+            margin-right: 0;
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
     }
 
     &__title {
         margin-bottom: 30px;
+
+        @media (max-width: 1139px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__skills-item {
         padding-left: 30px;
         position: relative;
+
+        @media (max-width: 1139px) {
+            font-size: 18px;
+            padding-left: 24px;
+        }
+
+        @media (max-width: 899px) {
+            font-size: 16px;
+            padding-left: 0;
+        }
     }
 
     &__skills-item+&__skills-item {
@@ -32,6 +73,10 @@
         width: 220px;
         height: 1px;
         color: var(--main-color);
+
+        @media (max-width: 899px) {
+            display: none;
+        }
     }
 
     &__social-links {
