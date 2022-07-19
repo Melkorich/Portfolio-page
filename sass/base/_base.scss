@@ -45,12 +45,10 @@ body.no-scroll {
     margin: 0 auto;
     padding: 0 15px;
 
-    &--fluid {
-        max-width: unset;
-    }
-
-    &--no-padding {
-        padding: 0;
+    &--mobile {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 
     /* Tablet big */
@@ -131,6 +129,7 @@ body.no-scroll {
     background-size: 100% 12px;
 
     @media (max-width: 1139px) {
+        background-position: center bottom 11px;
         background-size: 100% 10px;
     }
 
@@ -138,11 +137,19 @@ body.no-scroll {
         background-position: center bottom 6px;
         background-size: 100% 8px;
     }
+
+    @media (max-width: 767px) {
+        background-position: center bottom 4px;
+    }
 }
 
 .title-gradient__wrap .title-gradient.title-2 {
     background-size: 100% 8px;
     background-position: center bottom 10px;
+
+    @media (max-width: 1139px) {
+        background-position: center bottom 7px;
+    }
 
     @media (max-width: 899px) {
         background-position: center bottom 3px;

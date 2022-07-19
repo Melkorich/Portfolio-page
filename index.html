@@ -35,27 +35,11 @@
 </head>
 
 <body>
-    <!--svg sprites-->
-    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="linkedin" viewBox="0 0 32 32" fill="none">
-            <path
-                d="M7.44897 10.2947H1.02492C0.739808 10.2947 0.508789 10.5258 0.508789 10.8108V31.4485C0.508789 31.7336 0.739808 31.9647 1.02492 31.9647H7.44897C7.73408 31.9647 7.9651 31.7336 7.9651 31.4485V10.8108C7.9651 10.5258 7.73408 10.2947 7.44897 10.2947Z"
-                fill="black" />
-            <path
-                d="M4.23907 0.0351562C1.90163 0.0351562 0 1.93472 0 4.26958C0 6.60548 1.90163 8.50576 4.23907 8.50576C6.57466 8.50576 8.47474 6.60538 8.47474 4.26958C8.47484 1.93472 6.57466 0.0351562 4.23907 0.0351562Z"
-                fill="black" />
-            <path
-                d="M23.7892 9.78174C21.209 9.78174 19.3017 10.8909 18.1449 12.1512V10.8108C18.1449 10.5258 17.9138 10.2947 17.6287 10.2947H11.4766C11.1915 10.2947 10.9604 10.5258 10.9604 10.8108V31.4485C10.9604 31.7336 11.1915 31.9647 11.4766 31.9647H17.8866C18.1717 31.9647 18.4027 31.7336 18.4027 31.4485V21.2376C18.4027 17.7968 19.3373 16.4563 21.7359 16.4563C24.3481 16.4563 24.5557 18.6053 24.5557 21.4147V31.4486C24.5557 31.7337 24.7867 31.9648 25.0718 31.9648H31.4842C31.7693 31.9648 32.0004 31.7337 32.0004 31.4486V20.1285C32.0004 15.0121 31.0248 9.78174 23.7892 9.78174Z"
-                fill="black" />
-        </symbol>
 
-        <symbol id="github" viewBox="0 0 42 42" fill="none">
-            <path
-                d="M21 0.875C9.3975 0.875 0 10.115 0 21.511C0 30.6303 6.0165 38.3635 14.3587 41.09C15.4087 41.2843 15.7937 40.6455 15.7937 40.0978C15.7937 39.6078 15.7763 38.3093 15.7675 36.589C9.926 37.8333 8.694 33.8205 8.694 33.8205C7.7385 31.4388 6.35775 30.8018 6.35775 30.8018C4.4555 29.5225 6.50475 29.5488 6.50475 29.5488C8.6135 29.6923 9.72125 31.675 9.72125 31.675C11.5938 34.8303 14.637 33.9185 15.8375 33.3918C16.0265 32.0565 16.5673 31.1483 17.1675 30.632C12.5038 30.1158 7.602 28.3413 7.602 20.4348C7.602 18.1825 8.41575 16.3415 9.76325 14.8977C9.527 14.3763 8.81825 12.278 9.947 9.436C9.947 9.436 11.7058 8.883 15.722 11.5518C17.402 11.0933 19.187 10.8658 20.972 10.8553C22.757 10.8658 24.542 11.0933 26.222 11.5518C30.212 8.883 31.9707 9.436 31.9707 9.436C33.0995 12.278 32.3908 14.3763 32.1807 14.8977C33.5195 16.3415 34.3332 18.1825 34.3332 20.4348C34.3332 28.3623 29.4245 30.107 24.752 30.6145C25.487 31.234 26.1695 32.4993 26.1695 34.433C26.1695 37.1945 26.1432 39.4135 26.1432 40.0838C26.1432 40.6245 26.5107 41.2703 27.587 41.0638C35.9888 38.3548 42 30.6163 42 21.511C42 10.115 32.5972 0.875 21 0.875Z"
-                fill="#212121" />
-        </symbol>
-    </svg>
     <div class="wrapper">
+
+        <!--block for mobile menu-->
+        <div class="overlay"></div>
         <div class="menu-mobile">
             <nav class="menu-mobile__list">
                 <a class="menu-mobile__link" href="#about" aria-label="ссылка на секцию с навыками">
@@ -113,10 +97,22 @@
             </div>
 
         </div>
+        <!-- //block for mobile menu-->
+
+        <!-- header -->
         <header class="header">
+
+            <div class="header-mobile">
+                <div class="header-mobile__top container--mobile">
+                    <span class="logo">HTML Верстальщик</span>
+                    <button class="menu-btn" type="button">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="header__top">
-                    <span class="logo">HTML Верстальщик</span>
 
                     <nav class="header__nav nav">
 
@@ -140,20 +136,17 @@
 
                     <div class="header__social">
                         <a class="header__social-link" href="#" aria-label="ссылка на мой LinkedIn">
-                            <svg class="linkedin-icon">
-                                <use href="#linkedin"></use>
+                            <svg class="icon-linkedin">
+                                <use xlink:href='./images/sprite.svg#linkedin'></use>
                             </svg>
                         </a>
                         <a class="header__social-link" href="#" aria-label="ссылка на мой GitHub">
-                            <svg class="github-icon">
-                                <use href="#github"></use>
+                            <svg class="icon-github">
+                                <use xlink:href='./images/sprite.svg#github'></use>
                             </svg>
                         </a>
                     </div>
 
-                    <button class="menu-btn" type="button">
-                        <span></span>
-                    </button>
                 </div>
             </div>
 
@@ -197,6 +190,7 @@
                     alt="Картинка рабочего стола с компьютером">
             </div>
 
+            <!-- block about-->
             <div class="about" id="about">
                 <div class="container">
                     <div class="about__inner">
@@ -264,11 +258,14 @@
                     </div>
                 </div>
             </div>
+            <!-- //block about-->
 
         </header>
+        <!-- //header -->
 
         <main class="main">
 
+            <!-- section portfolio -->
             <section class="portfolio" id="portfolio">
                 <div class="container">
                     <div class="title-gradient__wrap">
@@ -278,10 +275,12 @@
                     </div>
                     <div class="portfolio__inner">
                         <div class="portfolio__item portfolio__item--large">
-                            <a class="portfolio__link" href="#"
+                            <a class="portfolio__link" href="https://melkorich.github.io/Forest-Travel/" target="_blank"
                                 aria-label="ссылка на работу верстки многостраничного сайта 'Форест травел'">
                                 <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/1.jpg" alt="сайт Форест тревел">
+                                    <img class="portfolio__img" src="./images/portfolio/forest-travel.jpg"
+                                        alt="изображение сайта Форест тревел">
+                                    <div class="portfolio__see">Смотреть проект</div>
                                 </div>
                                 <h4 class="portfolio__name">
                                     Верстка “Форест тревел”
@@ -292,9 +291,12 @@
                             </a>
                         </div>
                         <div class="portfolio__item portfolio__item--large">
-                            <a class="portfolio__link" href="#" aria-label="ссылка на работу верстки лендинга 'Юнит'">
+                            <a class="portfolio__link" href="https://melkorich.github.io/Unit/" target="_blank"
+                                aria-label="ссылка на работу верстки лендинга 'Юнит'">
                                 <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/2.jpg" alt="сайт Юнит">
+                                    <img class="portfolio__img" src="./images/portfolio/unit.jpg"
+                                        alt="изображение сайта Юнит">
+                                    <div class="portfolio__see">Смотреть проект</div>
                                 </div>
                                 <h4 class="portfolio__name">
                                     Сайт приложения “Юнит”
@@ -305,13 +307,16 @@
                             </a>
                         </div>
                         <div class="portfolio__item">
-                            <a class="portfolio__link" href="#"
+                            <a class="portfolio__link" href="https://melkorich.github.io/Taylor-Swift/app/index.html"
+                                target="_blank"
                                 aria-label="ссылка на работу верстки 'Многостраничного сайта о знаменитости'">
                                 <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/3.jpg" alt="">
+                                    <img class="portfolio__img" src="./images/portfolio/ts.jpg"
+                                        alt="изображения сайта об альбоме пивицы Taylor Swift">
+                                    <div class="portfolio__see">Смотреть проект</div>
                                 </div>
                                 <h4 class="portfolio__name">
-                                    Верстка “Мир Авто”
+                                    Музыкальный сайт “Taylor Swift”
                                 </h4>
                                 <p class="portfolio__descr">
                                     Верстка многостраничного сайта
@@ -319,37 +324,45 @@
                             </a>
                         </div>
                         <div class="portfolio__item">
-                            <a class="portfolio__link" href="#"
+                            <a class="portfolio__link" href="https://melkorich.github.io/Transflash/app/index.html"
+                                target="_blank"
                                 aria-label="ссылка на работу верстки лендинга транспортной компании'TransFlash'">
                                 <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/4.jpg" alt="">
+                                    <img class="portfolio__img" src="./images/portfolio/transflash.jpg"
+                                        alt="изображения сайта 'transflash'">
+                                    <div class="portfolio__see">Смотреть проект</div>
                                 </div>
                                 <h4 class="portfolio__name">
-                                    Верстка “Мир Авто”
+                                    Лендинг "Transflash"
                                 </h4>
                                 <p class="portfolio__descr">
-                                    Верстка многостраничного сайта
+                                    Верстка лендинга
                                 </p>
                             </a>
                         </div>
                         <div class="portfolio__item">
-                            <a class="portfolio__link" href="#"
-                                aria-label="ссылка на работу верстки лендинга сайта криптовалы 'Bixcoin'">
+                            <a class="portfolio__link" href="https://melkorich.github.io/Cootels/app/index.html"
+                                aria-label="ссылка на работу верстки лендинга сайта уютных домов для отдыха"
+                                target="_blank">
                                 <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/5.jpg" alt="">
+                                    <img class="portfolio__img" src="./images/portfolio/cootels.jpg"
+                                        alt="изображения сайта 'cootels'">
+                                    <div class="portfolio__see">Смотреть проект</div>
                                 </div>
                                 <h4 class="portfolio__name">
-                                    Верстка “Мир Авто”
+                                    Верстка сайта "Cootels"
                                 </h4>
                                 <p class="portfolio__descr">
-                                    Верстка многостраничного сайта
+                                    Верстка лендинга
                                 </p>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- //section portfolio -->
 
+            <!-- section timeline -->
             <section class="timeline" id="timeline">
                 <div class="container-small">
                     <div class="title-gradient__wrap timeline__title">
@@ -429,7 +442,9 @@
                     </ul>
                 </div>
             </section>
+            <!-- //section timeline -->
 
+            <!-- section contacts -->
             <section class="contacts" id="contacts">
                 <div class="container">
                     <div class="title-gradient__wrap contacts__title">
@@ -499,9 +514,11 @@
                     </div>
                 </div>
             </section>
+            <!-- //section contacts -->
 
         </main>
 
+        <!-- footer -->
         <footer class="footer">
             <div class="container">
                 <div class="foter__inner">
@@ -521,7 +538,7 @@
                 </div>
             </div>
         </footer>
-
+        <!-- //footer -->
     </div>
 
     <script src="./js/main.js"></script>

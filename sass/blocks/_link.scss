@@ -1,7 +1,16 @@
 .link {
     color: var(--link-color);
+    outline: none;
+    transition: color 0.2s ease;
+
+    &:focus,
+    &:hover,
+    &:active {
+        color: var(--hover-color);
+    }
 
     @media (max-width: 899px) {
         font-size: 18px;
     }
+
 }

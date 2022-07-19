@@ -33,8 +33,36 @@
         }
     }
 
+    &__social-link {
+        outline: none;
+    }
+
     &__social-link:not(:last-child) {
         margin-right: 26px;
+    }
+
+    &__social-link:focus {
+
+        .icon-linkedin,
+        .icon-github {
+            fill: #595959;
+        }
+    }
+
+    &__social-link:hover {
+
+        .icon-linkedin,
+        .icon-github {
+            fill: #595959;
+        }
+    }
+
+    &__social-link:active {
+
+        .icon-linkedin,
+        .icon-github {
+            fill: #595959;
+        }
     }
 
     &__inner {
@@ -172,7 +200,6 @@
         object-fit: cover;
         pointer-events: none;
     }
-
 }
 
 .linkedin-icon {
@@ -187,5 +214,30 @@
     @media (max-width: 1139px) {
         width: 36px;
         height: 36px;
+    }
+}
+
+.icon-linkedin {
+    width: 32px;
+    height: 32px;
+    fill: var(--main-color);
+    transition: fill 0.2s ease;
+}
+
+.icon-github {
+    width: 42px;
+    height: 42px;
+    fill: var(--main-color);
+    transition: fill 0.2s ease;
+}
+
+/*header-mobile top*/
+
+.header-mobile {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

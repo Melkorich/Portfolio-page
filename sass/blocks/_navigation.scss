@@ -18,9 +18,17 @@
         font-size: 20px;
         font-weight: 600;
         line-height: 1.3;
+        outline: none;
+        transition: color 0.2s ease;
 
         @media (max-width: 1139px) {
             font-size: 18px;
+        }
+
+        &:focus,
+        &:hover,
+        &:active {
+            color: var(--hover-color);
         }
     }
 }

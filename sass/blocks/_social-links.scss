@@ -20,6 +20,11 @@
     &__link {
         width: 48px;
         height: 48px;
+        transition: opacity 0.2s ease;
+
+        :hover {
+            opacity: 0.75;
+        }
 
         @media (max-width: 899px) {
             width: 38px;

@@ -9,6 +9,7 @@
     height: 100vh;
     width: 320px;
     z-index: 99;
+    overflow-y: auto;
     background-color: #fff;
     transition: transform 0.2s ease-in-out;
 
@@ -27,6 +28,13 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 1.3;
+        transition: color 0.2s ease;
+
+        &:focus,
+        &:hover,
+        &:active {
+            color: var(--hover-color);
+        }
     }
 
     &__link:last-child {

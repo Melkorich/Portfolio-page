@@ -64,11 +64,27 @@
         @media (max-width: 767px) {
             max-width: 100%;
         }
+
+        &:hover {
+            .portfolio__image::before {
+                opacity: 1;
+            }
+
+            .portfolio__name {
+                color: var(--hover-color);
+            }
+
+            .portfolio__see {
+                opacity: 1;
+            }
+        }
+
     }
 
     .portfolio__image {
         margin-bottom: 16px;
         height: 220px;
+        position: relative;
 
         @media (max-width: 1139px) {
             margin-bottom: 10px;
@@ -82,6 +98,20 @@
         @media (max-width: 767px) {
             height: 180px;
         }
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(255, 221, 85, 0.75), rgba(255, 221, 85, 0.75));
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
     }
 
     &__img {
@@ -90,11 +120,31 @@
         object-fit: cover;
     }
 
+    &__see {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        min-width: 208px;
+        padding: 14px 20px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.3;
+        text-align: center;
+        background-color: var(--hover-color);
+        border-radius: 80px;
+        color: #FFFFFF;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
     &__name {
         margin-bottom: 6px;
         font-weight: 600;
         font-size: 24px;
         line-height: 1.3;
+        transition: color 0.2s ease-in-out;
 
         @media (max-width: 1139px) {
             margin-bottom: 4px;
@@ -104,6 +154,7 @@
 
     &__descr {
         font-size: 18px;
+        margin-top: auto;
 
         @media (max-width: 1139px) {
             font-size: 14px;
