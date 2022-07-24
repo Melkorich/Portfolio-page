@@ -1,7 +1,8 @@
 .menu-mobile {
     padding: 30px 15px 40px;
-    position: absolute;
-    top: 0;
+    // position: absolute;
+    position: fixed;
+    top: 70px;
     right: 0;
     transform: translateX(200%);
     display: flex;
@@ -16,6 +17,10 @@
     &--active {
         transform: translateX(0%);
         box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    &--active .logo {
+        display: none !important;
     }
 
     &__list {

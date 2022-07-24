@@ -95,58 +95,58 @@
                     aria-label="имейл адрес">kirill.lavrov92@gmail.com
                 </a>
             </div>
-
         </div>
         <!-- //block for mobile menu-->
 
         <!-- header -->
         <header class="header">
 
-            <div class="header-mobile">
-                <div class="header-mobile__top container--mobile">
-                    <span class="logo">HTML Верстальщик</span>
-                    <button class="menu-btn" type="button">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="header__top">
-
-                    <nav class="header__nav nav">
-
-                        <a class="nav__link" href="#about" aria-label="ссылка на секцию с навыками">
-                            Навыки
-                        </a>
-
-                        <a class="nav__link" href="#portfolio" aria-label="ссылка на секцию с работами">
-                            Портфолио
-                        </a>
-
-                        <a class="nav__link" href="#timeline" aria-label="ссылка на секцию с моим планом работ">
-                            Как я работаю
-                        </a>
-
-                        <a class="nav__link" href="#contacts" aria-label="ссылка на мои контакты">
-                            Контакты
-                        </a>
-
-                    </nav>
-
-                    <div class="header__social">
-                        <a class="header__social-link" href="#" aria-label="ссылка на мой LinkedIn">
-                            <svg class="icon-linkedin">
-                                <use xlink:href='./images/sprite.svg#linkedin'></use>
-                            </svg>
-                        </a>
-                        <a class="header__social-link" href="#" aria-label="ссылка на мой GitHub">
-                            <svg class="icon-github">
-                                <use xlink:href='./images/sprite.svg#github'></use>
-                            </svg>
-                        </a>
+            <div class="header__fix">
+                <div class="header-mobile">
+                    <div class="header-mobile__top container--mobile">
+                        <span class="logo">HTML Верстальщик</span>
+                        <button class="menu-btn" type="button">
+                            <span></span>
+                        </button>
                     </div>
+                </div>
+                <div class="container">
+                    <div class="header__top">
 
+                        <nav class="header__nav nav" id="header-menu">
+
+                            <a class="nav__link" href="#about" aria-label="ссылка на секцию с навыками">
+                                Навыки
+                            </a>
+
+                            <a class="nav__link" href="#portfolio" aria-label="ссылка на секцию с работами">
+                                Портфолио
+                            </a>
+
+                            <a class="nav__link" href="#timeline" aria-label="ссылка на секцию с моим планом работ">
+                                Как я работаю
+                            </a>
+
+                            <a class="nav__link" href="#contacts" aria-label="ссылка на мои контакты">
+                                Контакты
+                            </a>
+
+                        </nav>
+
+                        <div class="header__social">
+                            <a class="header__social-link" href="#" aria-label="ссылка на мой LinkedIn">
+                                <svg class="icon-linkedin">
+                                    <use xlink:href='./images/sprite.svg#linkedin'></use>
+                                </svg>
+                            </a>
+                            <a class="header__social-link" href="#" aria-label="ссылка на мой GitHub">
+                                <svg class="icon-github">
+                                    <use xlink:href='./images/sprite.svg#github'></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -227,12 +227,12 @@
                                             alt="иконка соц-сети телеграм" aria-label="ссылка на мой телеграм">
                                     </a>
                                 </li>
-                                <li class="social-links__item">
+                                <!-- <li class="social-links__item">
                                     <a class="social-links__link" href="#">
                                         <img class="social-links__img" src="./images/icons/vk.svg"
                                             alt="иконка соц-сети ВКонтакте" aria-label="ссылка на ВК">
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="social-links__item">
                                     <a class="social-links__link" href="#">
                                         <img class="social-links__img" src="./images/icons/facebook.svg"
@@ -273,89 +273,98 @@
                             Портфолио
                         </h2>
                     </div>
-                    <div class="portfolio__inner">
-                        <div class="portfolio__item portfolio__item--large">
-                            <a class="portfolio__link" href="https://melkorich.github.io/Forest-Travel/" target="_blank"
-                                aria-label="ссылка на работу верстки многостраничного сайта 'Форест травел'">
-                                <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/forest-travel.jpg"
-                                        alt="изображение сайта Форест тревел">
-                                    <div class="portfolio__see">Смотреть проект</div>
-                                </div>
-                                <h4 class="portfolio__name">
-                                    Верстка “Форест тревел”
-                                </h4>
-                                <p class="portfolio__descr">
-                                    Верстка многостраничного сайта
-                                </p>
-                            </a>
+                    <div class="portfolio__block mix-block">
+                        <div class="portfolio__nav">
+                            <button class="portfolio__nav-btn" type="button" data-filter="all">Все</button>
+                            <button class="portfolio__nav-btn" type="button" data-filter=".landing">Лендинг</button>
+                            <button class="portfolio__nav-btn" type="button"
+                                data-filter=".multipage">Многостраничный</button>
                         </div>
-                        <div class="portfolio__item portfolio__item--large">
-                            <a class="portfolio__link" href="https://melkorich.github.io/Unit/" target="_blank"
-                                aria-label="ссылка на работу верстки лендинга 'Юнит'">
-                                <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/unit.jpg"
-                                        alt="изображение сайта Юнит">
-                                    <div class="portfolio__see">Смотреть проект</div>
-                                </div>
-                                <h4 class="portfolio__name">
-                                    Сайт приложения “Юнит”
-                                </h4>
-                                <p class="portfolio__descr">
-                                    Верстка лендинга
-                                </p>
-                            </a>
-                        </div>
-                        <div class="portfolio__item">
-                            <a class="portfolio__link" href="https://melkorich.github.io/Taylor-Swift/app/index.html"
-                                target="_blank"
-                                aria-label="ссылка на работу верстки 'Многостраничного сайта о знаменитости'">
-                                <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/ts.jpg"
-                                        alt="изображения сайта об альбоме пивицы Taylor Swift">
-                                    <div class="portfolio__see">Смотреть проект</div>
-                                </div>
-                                <h4 class="portfolio__name">
-                                    Музыкальный сайт “Taylor Swift”
-                                </h4>
-                                <p class="portfolio__descr">
-                                    Верстка многостраничного сайта
-                                </p>
-                            </a>
-                        </div>
-                        <div class="portfolio__item">
-                            <a class="portfolio__link" href="https://melkorich.github.io/Transflash/app/index.html"
-                                target="_blank"
-                                aria-label="ссылка на работу верстки лендинга транспортной компании'TransFlash'">
-                                <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/transflash.jpg"
-                                        alt="изображения сайта 'transflash'">
-                                    <div class="portfolio__see">Смотреть проект</div>
-                                </div>
-                                <h4 class="portfolio__name">
-                                    Лендинг "Transflash"
-                                </h4>
-                                <p class="portfolio__descr">
-                                    Верстка лендинга
-                                </p>
-                            </a>
-                        </div>
-                        <div class="portfolio__item">
-                            <a class="portfolio__link" href="https://melkorich.github.io/Cootels/app/index.html"
-                                aria-label="ссылка на работу верстки лендинга сайта уютных домов для отдыха"
-                                target="_blank">
-                                <div class="portfolio__image">
-                                    <img class="portfolio__img" src="./images/portfolio/cootels.jpg"
-                                        alt="изображения сайта 'cootels'">
-                                    <div class="portfolio__see">Смотреть проект</div>
-                                </div>
-                                <h4 class="portfolio__name">
-                                    Верстка сайта "Cootels"
-                                </h4>
-                                <p class="portfolio__descr">
-                                    Верстка лендинга
-                                </p>
-                            </a>
+                        <div class="portfolio__inner" id="mix-items">
+                            <div class="portfolio__item portfolio__item--large mix multipage">
+                                <a class="portfolio__link" href="https://melkorich.github.io/Forest-Travel/"
+                                    target="_blank"
+                                    aria-label="ссылка на работу верстки многостраничного сайта 'Форест травел'">
+                                    <div class="portfolio__image">
+                                        <img class="portfolio__img" src="./images/portfolio/forest-travel.jpg"
+                                            alt="изображение сайта Форест тревел">
+                                        <span class="portfolio__see">Смотреть проект</span>
+                                    </div>
+                                    <h4 class="portfolio__name">
+                                        Верстка “Форест тревел”
+                                    </h4>
+                                    <p class="portfolio__descr">
+                                        Верстка многостраничного сайта
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="portfolio__item portfolio__item--large mix landing">
+                                <a class="portfolio__link" href="https://melkorich.github.io/Unit/" target="_blank"
+                                    aria-label="ссылка на работу верстки лендинга 'Юнит'">
+                                    <div class="portfolio__image">
+                                        <img class="portfolio__img" src="./images/portfolio/unit.jpg"
+                                            alt="изображение сайта Юнит">
+                                        <span class="portfolio__see">Смотреть проект</span>
+                                    </div>
+                                    <h4 class="portfolio__name">
+                                        Сайт приложения “Юнит”
+                                    </h4>
+                                    <p class="portfolio__descr">
+                                        Верстка лендинга
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="portfolio__item mix multipage">
+                                <a class="portfolio__link"
+                                    href="https://melkorich.github.io/Taylor-Swift/app/index.html" target="_blank"
+                                    aria-label="ссылка на работу верстки 'Многостраничного сайта о знаменитости'">
+                                    <div class="portfolio__image">
+                                        <img class="portfolio__img" src="./images/portfolio/ts.jpg"
+                                            alt="изображения сайта об альбоме пивицы Taylor Swift">
+                                        <span class="portfolio__see">Смотреть проект</span>
+                                    </div>
+                                    <h4 class="portfolio__name">
+                                        Музыкальный сайт “Taylor Swift”
+                                    </h4>
+                                    <p class="portfolio__descr">
+                                        Верстка многостраничного сайта
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="portfolio__item mix landing">
+                                <a class="portfolio__link" href="https://melkorich.github.io/Transflash/app/index.html"
+                                    target="_blank"
+                                    aria-label="ссылка на работу верстки лендинга транспортной компании'TransFlash'">
+                                    <div class="portfolio__image">
+                                        <img class="portfolio__img" src="./images/portfolio/transflash.jpg"
+                                            alt="изображения сайта 'transflash'">
+                                        <span class="portfolio__see">Смотреть проект</span>
+                                    </div>
+                                    <h4 class="portfolio__name">
+                                        Лендинг "Transflash"
+                                    </h4>
+                                    <p class="portfolio__descr">
+                                        Верстка лендинга
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="portfolio__item mix landing">
+                                <a class="portfolio__link" href="https://melkorich.github.io/Cootels/app/index.html"
+                                    aria-label="ссылка на работу верстки лендинга сайта уютных домов для отдыха"
+                                    target="_blank">
+                                    <div class="portfolio__image">
+                                        <img class="portfolio__img" src="./images/portfolio/cootels.jpg"
+                                            alt="изображения сайта 'cootels'">
+                                        <span class="portfolio__see">Смотреть проект</span>
+                                    </div>
+                                    <h4 class="portfolio__name">
+                                        Верстка сайта "Cootels"
+                                    </h4>
+                                    <p class="portfolio__descr">
+                                        Верстка лендинга
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -454,6 +463,12 @@
                     </div>
                     <div class="contacts__inner">
                         <div class="contacts__col">
+                            <div class="contacts__text">
+                                <p>
+                                    Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для
+                                    работы над проектом — напишите мне.
+                                </p>
+                            </div>
                             <ul class="contacts__links">
                                 <li class="contacts__item">
                                     <span>Email</span>
@@ -476,12 +491,12 @@
                                             alt="иконка соц-сети телеграм" aria-label="ссылка на мой телеграм">
                                     </a>
                                 </li>
-                                <li class="social-links__item">
+                                <!-- <li class="social-links__item">
                                     <a class="social-links__link" href="#">
                                         <img class="social-links__img" src="./images/icons/vk.svg"
                                             alt="иконка соц-сети ВКонтакте" aria-label="ссылка на ВК">
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="social-links__item">
                                     <a class="social-links__link" href="#">
                                         <img class="social-links__img" src="./images/icons/facebook.svg"
@@ -501,15 +516,32 @@
                                     </a>
                                 </li>
                             </ul>
+                            <img class="move-quote--small" src="./images/contacts/quotes2.png"
+                                alt="изображение кавычек">
                         </div>
 
                         <div class="contacts__col">
-                            <div class="contacts__text">
-                                <p>
-                                    Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для
-                                    работы над проектом — напишите мне.
-                                </p>
-                            </div>
+                            <img class="move-quote" src="./images/contacts/quotes.png" alt="изображение кавычек">
+
+                            <form class="contacts__form form" action="#">
+
+                                <div class="form__item">
+                                    <span class="form__fake-placeholder">Ваш Email</span>
+                                    <input class="form__input form__field" type="email" name="email">
+                                </div>
+
+                                <div class="form__item">
+                                    <span class="form__fake-placeholder">Сообщение</span>
+                                    <textarea class="form__textarea form__field" name="message"></textarea>
+                                </div>
+
+                                <div class="form__item">
+                                    <button class="button button--accent form__btn" type="submit"
+                                        value="send">Отправить</button>
+                                </div>
+                            </form>
+                            <div id="answer"></div>
+
                         </div>
                     </div>
                 </div>
@@ -541,6 +573,10 @@
         <!-- //footer -->
     </div>
 
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/jquery/jquery.validate.min.js"></script>
+    <script src="./libs/pageNav/nav.js"></script>
+    <script src="./libs/mixitup/mixitup.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

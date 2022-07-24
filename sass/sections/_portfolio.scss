@@ -30,7 +30,7 @@
     }
 
     .title-gradient__wrap {
-        margin-bottom: 65px;
+        margin-bottom: 50px;
 
         @media (max-width: 1139px) {
             margin-bottom: 36px;
@@ -39,6 +39,21 @@
         @media (max-width: 899px) {
             margin-bottom: 30px;
         }
+    }
+
+    &__nav {
+        margin-bottom: 20px;
+    }
+
+    &__nav-btn {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-right: 50px;
+        background-color: transparent;
+    }
+
+    &__nav-btn.mixitup-control-active {
+        color: var(--hover-color);
     }
 
     &__item {
