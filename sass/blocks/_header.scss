@@ -1,6 +1,9 @@
 .header {
-    // padding: 60px 0 90px;
-    padding: 0 0 90px;
+    padding: 84px 0 90px;
+
+    // position: relative;
+    // z-index: 1;
+    // padding: 0 0 90px;
 
     @media (max-width: 1139px) {
         padding: 60px 0 60px;
@@ -17,7 +20,6 @@
         right: 0;
         width: 100%;
         z-index: 99;
-        overflow: hidden;
     }
 
     .header__scroll,
@@ -27,26 +29,25 @@
     }
 
     .header__scroll .header__top {
-        padding: 25px 0;
+        padding: 20px 0;
         transition: padding 0.3s ease;
     }
 
-    .header__scroll--mobile .header-mobile {
-        padding: 25px 0;
-        transition: padding 0.3s ease;
-    }
+    // .header__scroll--mobile .header-mobile {
+    //     padding: 25px 0;
+    //     transition: padding 0.3s ease;
+    // }
 
     &__top {
-        padding: 60px 0;
-        // margin-bottom: 82px;
+        padding: 60px 0 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         transition: padding 0.3s ease;
 
-        // @media (max-width: 1139px) {
-        //     margin-bottom: 60px;
-        // }
+        @media (max-width: 1139px) {
+            padding: 60px 0 30px;
+        }
 
         @media (max-width: 899px) {
             // margin-bottom: 30px;
@@ -55,14 +56,14 @@
     }
 
     &__main {
-        padding-top: 184px;
+        padding-top: 100px;
 
-        @media (max-width: 1139px) {
-            padding-top: 96px;
-        }
+        // @media (max-width: 1139px) {
+        //     padding-top: 96px;
+        // }
 
         @media (max-width: 899px) {
-            padding-top: 55px;
+            padding-top: 52px;
         }
     }
 
@@ -85,7 +86,7 @@
 
     &__social-link:focus {
 
-        .icon-linkedin,
+        .icon-telegram,
         .icon-github {
             fill: #595959;
         }
@@ -93,7 +94,7 @@
 
     &__social-link:hover {
 
-        .icon-linkedin,
+        .icon-telegram,
         .icon-github {
             fill: #595959;
         }
@@ -101,7 +102,7 @@
 
     &__social-link:active {
 
-        .icon-linkedin,
+        .icon-telegram,
         .icon-github {
             fill: #595959;
         }
@@ -148,7 +149,8 @@
         }
     }
 
-    &__descr {
+    &__descr,
+    .auto-type {
         margin-bottom: 30px;
         line-height: 1.59;
         max-width: 540px;
@@ -244,10 +246,6 @@
     }
 }
 
-.linkedin-icon {
-    width: 32px;
-    height: 32px;
-}
 
 .github-icon {
     width: 42px;
@@ -266,18 +264,26 @@
     transition: fill 0.2s ease;
 }
 
-.icon-github {
+.icon-telegram {
     width: 42px;
     height: 42px;
     fill: var(--main-color);
     transition: fill 0.2s ease;
 }
 
+.icon-github {
+    width: 42px;
+    height: 42px;
+    fill: var(--main-color);
+    transition: fill 0.2s ease;
+
+}
+
 /*header-mobile top*/
 
 .header-mobile {
     display: none;
-    padding: 30px 0;
+    padding: 20px 0;
     transition: padding 0.3s ease;
 
     @media (max-width: 899px) {

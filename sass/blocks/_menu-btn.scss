@@ -6,9 +6,12 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        // position: fixed;
+        // top: 28px;
+        // right: 15px;
         width: 40px;
         height: 25px;
-        z-index: 100;
+        z-index: 999;
         border: none;
         outline: none;
         background-color: transparent;

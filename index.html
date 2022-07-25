@@ -38,65 +38,7 @@
 
     <div class="wrapper">
 
-        <!--block for mobile menu-->
         <div class="overlay"></div>
-        <div class="menu-mobile">
-            <nav class="menu-mobile__list">
-                <a class="menu-mobile__link" href="#about" aria-label="ссылка на секцию с навыками">
-                    Навыки
-                </a>
-
-                <a class="menu-mobile__link" href="#portfolio" aria-label="ссылка на секцию с работами">
-                    Портфолио
-                </a>
-
-                <a class="menu-mobile__link" href="#timeline" aria-label="ссылка на секцию с моим планом работ">
-                    Как я работаю
-                </a>
-
-                <a class="menu-mobile__link" href="#contacts" aria-label="ссылка на мои контакты">
-                    Контакты
-                </a>
-            </nav>
-            <div class="menu-mobile__contacts">
-                <ul class="menu-mobile__social-links social-links ">
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="#">
-                            <img class="social-links__img" src="./images/icons/telegram.svg"
-                                alt="иконка соц-сети телеграм" aria-label="ссылка на мой телеграм">
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="#">
-                            <img class="social-links__img" src="./images/icons/vk.svg" alt="иконка соц-сети ВКонтакте"
-                                aria-label="ссылка на ВК">
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="#">
-                            <img class="social-links__img" src="./images/icons/facebook.svg"
-                                alt="иконка соц-сети фейсбук" aria-label="ссылка на мой фейсбук">
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="#">
-                            <img class="social-links__img" src="./images/icons/instagram.svg"
-                                alt="иконка соц-сети инстаграм" aria-label="ссылка на мой инстаграм">
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link" href="#">
-                            <img class="social-links__img" src="./images/icons/whatsupp.svg"
-                                alt="иконка мессенжера вотсап" aria-label="ссылка на мой вотсап">
-                        </a>
-                    </li>
-                </ul>
-                <a class="link" href="mailto:yurij.kluchevsky@gmail.com"
-                    aria-label="имейл адрес">kirill.lavrov92@gmail.com
-                </a>
-            </div>
-        </div>
-        <!-- //block for mobile menu-->
 
         <!-- header -->
         <header class="header">
@@ -104,42 +46,110 @@
             <div class="header__fix">
                 <div class="header-mobile">
                     <div class="header-mobile__top container--mobile">
-                        <span class="logo">HTML Верстальщик</span>
+                        <div class="logo">
+                            <img class="logo__img" src="./images/k-logo.png" alt="Логотип 'Кирилл Лавров'">
+                        </div>
+
+                        <!--button for mobile menu-->
                         <button class="menu-btn" type="button">
                             <span></span>
                         </button>
+                        <!-- //button for mobile menu-->
+
+                        <!--block for mobile menu-->
+                        <div class="menu-mobile">
+                            <nav class="menu-mobile__list">
+                                <a class="menu-mobile__link" href="#about" aria-label="ссылка на секцию с навыками">
+                                    Навыки
+                                </a>
+
+                                <a class="menu-mobile__link" href="#portfolio" aria-label="ссылка на секцию с работами">
+                                    Портфолио
+                                </a>
+
+                                <a class="menu-mobile__link" href="#timeline"
+                                    aria-label="ссылка на секцию с моим планом работ">
+                                    Как я работаю
+                                </a>
+
+                                <a class="menu-mobile__link" href="#contacts" aria-label="ссылка на мои контакты">
+                                    Контакты
+                                </a>
+                            </nav>
+                            <div class="menu-mobile__contacts">
+                                <ul class="menu-mobile__social-links social-links ">
+                                    <li class="social-links__item">
+                                        <a class="social-links__link" href="https://telegram.me/keshalavrov"
+                                            target="_blank">
+                                            <img class="social-links__img" src="./images/icons/telegram.svg"
+                                                alt="иконка соц-сети телеграм" aria-label="ссылка на мой телеграм">
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a class="social-links__link" href="https://www.facebook.com/kirill.lavrov.351/"
+                                            target="_blank">
+                                            <img class="social-links__img" src="./images/icons/facebook.svg"
+                                                alt="иконка соц-сети фейсбук" aria-label="ссылка на мой фейсбук">
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a class="social-links__link" href="https://www.instagram.com/keshalavrov/"
+                                            target="_blank">
+                                            <img class="social-links__img" src="./images/icons/instagram.svg"
+                                                alt="иконка соц-сети инстаграм" aria-label="ссылка на мой инстаграм">
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a class="social-links__link"
+                                            href="https://api.whatsapp.com/send?phone=89254821801" target="_blank">
+                                            <img class="social-links__img" src="./images/icons/whatsupp.svg"
+                                                alt="иконка мессенжера вотсап" aria-label="ссылка на мой вотсап">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="link" href="mailto:yurij.kluchevsky@gmail.com"
+                                    aria-label="имейл адрес">kirill.lavrov92@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //block for mobile menu-->
                     </div>
                 </div>
                 <div class="container">
                     <div class="header__top">
 
-                        <nav class="header__nav nav" id="header-menu">
-
-                            <a class="nav__link" href="#about" aria-label="ссылка на секцию с навыками">
-                                Навыки
-                            </a>
-
-                            <a class="nav__link" href="#portfolio" aria-label="ссылка на секцию с работами">
-                                Портфолио
-                            </a>
-
-                            <a class="nav__link" href="#timeline" aria-label="ссылка на секцию с моим планом работ">
-                                Как я работаю
-                            </a>
-
-                            <a class="nav__link" href="#contacts" aria-label="ссылка на мои контакты">
-                                Контакты
-                            </a>
-
-                        </nav>
+                        <ul class="header__nav nav" id="header-menu">
+                            <li class="nav__link">
+                                <a href="#about" aria-label="ссылка на секцию с навыками">
+                                    Навыки
+                                </a>
+                            </li>
+                            <li class="nav__link">
+                                <a href="#portfolio" aria-label="ссылка на секцию с работами">
+                                    Портфолио
+                                </a>
+                            </li>
+                            <li class="nav__link">
+                                <a href="#timeline" aria-label="ссылка на секцию с моим планом работ">
+                                    Как я работаю
+                                </a>
+                            </li>
+                            <li class="nav__link">
+                                <a href="#contacts" aria-label="ссылка на мои контакты">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
 
                         <div class="header__social">
-                            <a class="header__social-link" href="#" aria-label="ссылка на мой LinkedIn">
-                                <svg class="icon-linkedin">
-                                    <use xlink:href='./images/sprite.svg#linkedin'></use>
+                            <a class="header__social-link" href="https://telegram.me/keshalavrov" target="_blank"
+                                aria-label="ссылка на мой Telegram">
+                                <svg class="icon-telegram">
+                                    <use xlink:href='./images/sprite.svg#telegram'></use>
                                 </svg>
                             </a>
-                            <a class="header__social-link" href="#" aria-label="ссылка на мой GitHub">
+                            <a class="header__social-link" href="https://github.com/Melkorich" target="_blank"
+                                aria-label="ссылка на мой GitHub">
                                 <svg class="icon-github">
                                     <use xlink:href='./images/sprite.svg#github'></use>
                                 </svg>
@@ -165,8 +175,10 @@
                             </div>
                             <div class="header__descr">
                                 <p>
-                                    Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением
-                                    сроков и выполнением ТЗ.
+                                    <span class="auto-type"></span>
+                                    <!-- Верстальщик сайтов, веб-разработчик. Оперативная
+                                    верстка. Работаю с соблюдением
+                                    сроков и выполнением ТЗ. -->
                                 </p>
                             </div>
                             <div class="header__links">
@@ -222,31 +234,29 @@
                             </h3>
                             <ul class="about__social-links social-links social-links--mobile">
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://telegram.me/keshalavrov"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/telegram.svg"
                                             alt="иконка соц-сети телеграм" aria-label="ссылка на мой телеграм">
                                     </a>
                                 </li>
-                                <!-- <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
-                                        <img class="social-links__img" src="./images/icons/vk.svg"
-                                            alt="иконка соц-сети ВКонтакте" aria-label="ссылка на ВК">
-                                    </a>
-                                </li> -->
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://www.facebook.com/kirill.lavrov.351/"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/facebook.svg"
                                             alt="иконка соц-сети фейсбук" aria-label="ссылка на мой фейсбук">
                                     </a>
                                 </li>
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://www.instagram.com/keshalavrov/"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/instagram.svg"
                                             alt="иконка соц-сети инстаграм" aria-label="ссылка на мой инстаграм">
                                     </a>
                                 </li>
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://api.whatsapp.com/send?phone=89254821801"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/whatsupp.svg"
                                             alt="иконка мессенжера вотсап" aria-label="ссылка на мой вотсап">
                                     </a>
@@ -274,11 +284,13 @@
                         </h2>
                     </div>
                     <div class="portfolio__block mix-block">
-                        <div class="portfolio__nav">
-                            <button class="portfolio__nav-btn" type="button" data-filter="all">Все</button>
-                            <button class="portfolio__nav-btn" type="button" data-filter=".landing">Лендинг</button>
-                            <button class="portfolio__nav-btn" type="button"
-                                data-filter=".multipage">Многостраничный</button>
+                        <div class="portfolio__swiper-wrap">
+                            <div class="portfolio__nav">
+                                <button class="portfolio__nav-btn" type="button" data-filter="all">Все</button>
+                                <button class="portfolio__nav-btn" type="button" data-filter=".landing">Лендинг</button>
+                                <button class="portfolio__nav-btn" type="button"
+                                    data-filter=".multipage">Многостраничный</button>
+                            </div>
                         </div>
                         <div class="portfolio__inner" id="mix-items">
                             <div class="portfolio__item portfolio__item--large mix multipage">
@@ -486,31 +498,29 @@
 
                             <ul class="contacts__social-links social-links">
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://telegram.me/keshalavrov"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/telegram.svg"
                                             alt="иконка соц-сети телеграм" aria-label="ссылка на мой телеграм">
                                     </a>
                                 </li>
-                                <!-- <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
-                                        <img class="social-links__img" src="./images/icons/vk.svg"
-                                            alt="иконка соц-сети ВКонтакте" aria-label="ссылка на ВК">
-                                    </a>
-                                </li> -->
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://www.facebook.com/kirill.lavrov.351/"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/facebook.svg"
                                             alt="иконка соц-сети фейсбук" aria-label="ссылка на мой фейсбук">
                                     </a>
                                 </li>
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://www.instagram.com/keshalavrov/"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/instagram.svg"
                                             alt="иконка соц-сети инстаграм" aria-label="ссылка на мой инстаграм">
                                     </a>
                                 </li>
                                 <li class="social-links__item">
-                                    <a class="social-links__link" href="#">
+                                    <a class="social-links__link" href="https://api.whatsapp.com/send?phone=89254821801"
+                                        target="_blank">
                                         <img class="social-links__img" src="./images/icons/whatsupp.svg"
                                             alt="иконка мессенжера вотсап" aria-label="ссылка на мой вотсап">
                                     </a>
@@ -577,6 +587,7 @@
     <script src="./libs/jquery/jquery.validate.min.js"></script>
     <script src="./libs/pageNav/nav.js"></script>
     <script src="./libs/mixitup/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
 </body>
 

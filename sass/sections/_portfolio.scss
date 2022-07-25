@@ -41,8 +41,22 @@
         }
     }
 
+    &__swiper-wrap {
+        width: calc(50% + 50vw);
+        overflow: hidden;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    &__swiper-wrap::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
     &__nav {
         margin-bottom: 20px;
+        white-space: nowrap;
     }
 
     &__nav-btn {
@@ -50,6 +64,11 @@
         font-size: 20px;
         margin-right: 50px;
         background-color: transparent;
+
+        @media (max-width: 767px) {
+            margin-right: 30px;
+            font-size: 18px;
+        }
     }
 
     &__nav-btn.mixitup-control-active {

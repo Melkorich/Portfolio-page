@@ -5,23 +5,45 @@ $(document).ready(function () {
     const menu = document.querySelector('.menu-mobile');
     const overlay = document.querySelector('.overlay');
     const navLinks = document.querySelectorAll('.menu-mobile__list a');
+    const body = document.querySelector('body');
 
 
     menuBtn.addEventListener('click', function () {
         this.classList.toggle('menu-btn--active');
         menu.classList.toggle('menu-mobile--active');
-        document.querySelector('body').classList.toggle('no-scroll');
+        body.classList.toggle('no-scroll');
         overlay.classList.toggle('overlay--active');
     });
 
     navLinks.forEach(function (item) {
         item.addEventListener('click', function () {
-            menuBtn.classList.remove('menu-btn--active');
-            menu.classList.remove('menu-mobile--active');
-            document.querySelector('body').classList.remove('no-scroll');
-            overlay.classList.remove('overlay--active');
+            turnOffMobileNav();
         })
     })
+
+    overlay.addEventListener('click', function () {
+        turnOffMobileNav();
+    })
+
+
+    //function for removing all active objects
+    function turnOffMobileNav() {
+        if (menuBtn.classList.contains('menu-btn--active')) {
+            menuBtn.classList.remove('menu-btn--active');
+        }
+
+        if (overlay.classList.contains('overlay--active')) {
+            overlay.classList.remove('overlay--active');
+        }
+
+        if (menu.classList.contains('menu-mobile--active')) {
+            menu.classList.remove('menu-mobile--active');
+        }
+
+        if (body.classList.contains('no-scroll')) {
+            body.classList.remove('no-scroll');
+        }
+    }
 
 
 
@@ -29,7 +51,7 @@ $(document).ready(function () {
     window.addEventListener('resize', function () {
         menuBtn.classList.remove('menu-btn--active');
         menu.classList.remove('menu-mobile--active');
-        document.querySelector('body').classList.remove('no-scroll');
+        body.classList.remove('no-scroll');
         overlay.classList.remove('overlay--active');
     })
 
@@ -63,18 +85,17 @@ $(document).ready(function () {
 
     //fixed scroll header
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 150) {
+        if ($(document).scrollTop() > 60) {
             $(".header__fix").addClass("header__scroll");
         } else {
             $(".header__fix").removeClass("header__scroll");
         }
 
-
-        if ($(document).scrollTop() > 60) {
-            $(".header__fix").addClass("header__scroll--mobile");
-        } else {
-            $(".header__fix").removeClass("header__scroll--mobile");
-        }
+        // if ($(document).scrollTop() > 60) {
+        //     $(".header__fix").addClass("header__scroll--mobile");
+        // } else {
+        //     $(".header__fix").removeClass("header__scroll--mobile");
+        // }
     });
 
 
@@ -89,6 +110,19 @@ $(document).ready(function () {
         easing: 'swing',
     })
 
+
+    //plagin type js for type effect
+
+    var typed = new Typed('.auto-type', {
+        strings: [
+            'Верстальщик сайтов, веб-разработчик. Работаю с соблюдением сроков и выполнением ТЗ. ^1500',
+            'Сделаю для Вас лендинг, сайт-визитку, личный сайт, корпоративный лендинг и др.',
+            'Напишите мне, буду рад сотрудничеству! ^1000'
+        ],
+        typeSpeed: 50,
+        backSpeed: 20,
+        loop: true
+    })
 
     //form
 
