@@ -99,20 +99,20 @@ $(document).ready(function () {
     });
 
 
-    //plagin pageNav
 
+    //plagin pageNav
     $('#header-menu').onePageNav({
         currentClass: 'active',
         changeHash: false,
-        scrollSpeed: 750,
+        scrollSpeed: 150,
         scrollThreshold: 0.5,
         filter: '',
         easing: 'swing',
     })
 
 
-    //plagin type js for type effect
 
+    //plagin typeJs for type effect
     var typed = new Typed('.auto-type', {
         strings: [
             'Верстальщик сайтов, веб-разработчик. Работаю с соблюдением сроков и выполнением ТЗ. ^1500',
@@ -124,8 +124,9 @@ $(document).ready(function () {
         loop: true
     })
 
-    //form
 
+
+    //form
     const formItems = document.querySelectorAll('.form__field');
 
     for (let item of formItems) {
